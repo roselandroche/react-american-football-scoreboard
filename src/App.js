@@ -5,6 +5,8 @@ import BottomRow from "./BottomRow";
 
 function App() {
   //TODO: STEP 2 - Establish your application's state with some useState hooks.  You'll need one for the home score and another for the away score.
+  const [homeScore, updateHomeScore] = useState(0)
+  const [awayScore, updateAwayScore] = useState(0)
 
   return (
     <div className="container">
@@ -12,8 +14,6 @@ function App() {
         <div className="topRow">
           <div className="home">
             <h2 className="home__name">Lions</h2>
-            const [homeScore, updateHomeScore] = useState(0)
-            const [awayScore, updateAwayScore] = useState(0)
 
             {/* TODO STEP 3 - We need to change the hardcoded values in these divs to accept dynamic values from our state. */}
 
